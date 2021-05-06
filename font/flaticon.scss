@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?3ab181119893546bed4e0dad84879d05") format("truetype"),
+url("./flaticon.woff?3ab181119893546bed4e0dad84879d05") format("woff"),
+url("./flaticon.woff2?3ab181119893546bed4e0dad84879d05") format("woff2"),
+url("./flaticon.eot?3ab181119893546bed4e0dad84879d05#iefix") format("embedded-opentype"),
+url("./flaticon.svg?3ab181119893546bed4e0dad84879d05#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "power": "\f101",
+    "cute-rocket-launching": "\f102",
+    "premium": "\f103",
+    "down-arrow": "\f104",
+    "light-bulb": "\f105",
+    "rocket": "\f106",
+    "heart": "\f107",
+    "shield": "\f108",
+);
+
+.flaticon-power:before {
+    content: map-get($flaticon-map, "power");
+}
+.flaticon-cute-rocket-launching:before {
+    content: map-get($flaticon-map, "cute-rocket-launching");
+}
+.flaticon-premium:before {
+    content: map-get($flaticon-map, "premium");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-light-bulb:before {
+    content: map-get($flaticon-map, "light-bulb");
+}
+.flaticon-rocket:before {
+    content: map-get($flaticon-map, "rocket");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-shield:before {
+    content: map-get($flaticon-map, "shield");
+}
